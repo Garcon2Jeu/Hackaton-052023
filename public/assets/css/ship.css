@@ -1,0 +1,66 @@
+.ship-page{
+    background-image:url("../images/index-background.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+}
+.all-for-one-ship{
+    display: flex;
+    flex-direction: row;
+}
+
+.shipTitle{
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: xxx-large;
+    margin-left: 30%;
+}
+.all-for-one-ship{
+    margin-left: 5%;
+}
+.oneShipImage{
+    margin-left: 50px;
+}
+p{
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    height:40px;
+    margin-left: 15px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

@@ -1,32 +1,27 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% extends 'layout.html.twig' %}
+{% block title %}
+    Planets
+{% endblock %}
+{% block content%}
     <link rel="stylesheet" href="/assets/css/planets.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-    </style>
-    <title>Planets</title>
-</head>
-<body class="SR_body_planets">
-<div class="SR_planets">
-    <div class="SR_jupiter_planets">
-        <h3 class="SR_planets_names">JUPITER</h3>
-        <img src="/assets/images/jupiter.png">
-    </div>
+    <body class="SR_body_planets">
+    <div class="SR_planets">
+        <div class="SR_mercury_planets">
+            <h3 class="SR_planets_names">MERCURY</h3>
+            <img src="/assets/images/mercure.png" alt="image of mercury">
+        </div>
 
-    <div class="SR_mars_planets">
-        <h3 class="SR_planets_names">MARS</h3>
-        <img src="/assets/images/mars.png">
-    </div>
+        <div class="SR_mars_planets">
+            <h3 class="SR_planets_names">MARS</h3>
+            <img src="/assets/images/mars.png" alt="image of mars">
+        </div>
 
-    <div class="SR_venus_planets">
-        <h3 class="SR_planets_names">VENUS</h3>
-        <img src="/assets/images/venus.png">
+        <div class="SR_venus_planets">
+            <h3 class="SR_planets_names">VENUS</h3>
+            <img src="/assets/images/venus.png" alt="image venus">
+        </div>
     </div>
-</div>
-</body>
-</html>
+    </body>
+    </html>
+
+{% endblock %}
