@@ -11,6 +11,6 @@ return [
     'populateDB' => ["populateDBController", 'populateDB'],
     'planets' => ["showPlanetsController", "showAllPlanets"],
     'planet' => ["showPlanetsController", "showPlanet", ["id"]],
-    'ships' => ["showShipsController", "showAllShips"],
+    'ships' => ["ShowShipsController", "showAllShips"],
     'ship' => ["showShipsController", "showShip", ["id"]],
 ];
