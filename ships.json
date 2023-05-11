@@ -1,0 +1,158 @@
+{
+    "count": 36,
+    "next": "https://swapi.dev/api/starships/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "model": "Phoenix",
+            "manufacturer": "Corellian Engineering Corporation",
+            "cost_in_credits": "3500000",
+            "length": "150",
+            "max_atmosphering_speed": "950",
+            "crew": "30-165",
+            "passengers": "600",
+            "cargo_capacity": "3000000",
+            "consumables": "1 year",
+            "hyperdrive_rating": "2.0",
+            "MGLT": "60",
+            "starship_class": "corvette",
+            "pilots": [],
+            "films": [
+                "https://swapi.dev/api/films/1/",
+                "https://swapi.dev/api/films/3/",
+                "https://swapi.dev/api/films/6/"
+            ],
+            "created": "2014-12-10T14:20:33.369000Z",
+            "edited": "2014-12-20T21:23:49.867000Z",
+            "url": "https://swapi.dev/api/starships/2/",
+            "picturePath": "/assets/images/Phoenix.png"
+        },
+        {
+            "name": "Sentinel-class landing craft",
+            "model": "Intrepide",
+            "manufacturer": "Sienar Fleet Systems, Cyngus Spaceworks",
+            "cost_in_credits": "240000",
+            "length": "38",
+            "max_atmosphering_speed": "1000",
+            "crew": "5",
+            "passengers": "75",
+            "cargo_capacity": "180000",
+            "consumables": "1 month",
+            "hyperdrive_rating": "1.0",
+            "MGLT": "70",
+            "starship_class": "landing craft",
+            "pilots": [],
+            "films": [
+                "https://swapi.dev/api/films/1/"
+            ],
+            "created": "2014-12-10T15:48:00.586000Z",
+            "edited": "2014-12-20T21:23:49.873000Z",
+            "url": "https://swapi.dev/api/starships/5/",
+            "picturePath": "/assets/images/Intrepide.png"
+        },
+        {
+            "name": "Y-wing",
+            "model": "Aurora",
+            "manufacturer": "Koensayr Manufacturing",
+            "cost_in_credits": "134999",
+            "length": "14",
+            "max_atmosphering_speed": "1000km",
+            "crew": "2",
+            "passengers": "0",
+            "cargo_capacity": "110",
+            "consumables": "1 week",
+            "hyperdrive_rating": "1.0",
+            "MGLT": "80",
+            "starship_class": "assault starfighter",
+            "pilots": [],
+            "films": [
+                "https://swapi.dev/api/films/1/",
+                "https://swapi.dev/api/films/2/",
+                "https://swapi.dev/api/films/3/"
+            ],
+            "created": "2014-12-12T11:00:39.817000Z",
+            "edited": "2014-12-20T21:23:49.883000Z",
+            "url": "https://swapi.dev/api/starships/11/",
+            "picturePath": "/assets/images/Aurora.png"
+        },
+        {
+            "name": "X-wing",
+            "model": "Thunderbird",
+            "manufacturer": "Incom Corporation",
+            "cost_in_credits": "149999",
+            "length": "12.5",
+            "max_atmosphering_speed": "1050",
+            "crew": "1",
+            "passengers": "0",
+            "cargo_capacity": "110",
+            "consumables": "1 week",
+            "hyperdrive_rating": "1.0",
+            "MGLT": "100",
+            "starship_class": "Starfighter",
+            "pilots": [
+                "https://swapi.dev/api/people/1/",
+                "https://swapi.dev/api/people/9/",
+                "https://swapi.dev/api/people/18/",
+                "https://swapi.dev/api/people/19/"
+            ],
+            "films": [
+                "https://swapi.dev/api/films/1/",
+                "https://swapi.dev/api/films/2/",
+                "https://swapi.dev/api/films/3/"
+            ],
+            "created": "2014-12-12T11:19:05.340000Z",
+            "edited": "2014-12-20T21:23:49.886000Z",
+            "url": "https://swapi.dev/api/starships/12/",
+            "picturePath": "/assets/images/Thunderbird.png"
+        },
+        {
+            "name": "TIE Advanced x1",
+            "model": "Starfire",
+            "manufacturer": "Sienar Fleet Systems",
+            "cost_in_credits": "unknown",
+            "length": "9.2",
+            "max_atmosphering_speed": "1200",
+            "crew": "1",
+            "passengers": "0",
+            "cargo_capacity": "150",
+            "consumables": "5 days",
+            "hyperdrive_rating": "1.0",
+            "MGLT": "105",
+            "starship_class": "Starfighter",
+            "pilots": [
+                "https://swapi.dev/api/people/4/"
+            ],
+            "films": [
+                "https://swapi.dev/api/films/1/"
+            ],
+            "created": "2014-12-12T11:21:32.991000Z",
+            "edited": "2014-12-20T21:23:49.889000Z",
+            "url": "https://swapi.dev/api/starships/13/",
+            "picturePath": "/assets/images/Starfire.png"
+        },
+        {
+            "name": "Executor",
+            "model": "Solaris",
+            "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
+            "cost_in_credits": "1143350000",
+            "length": "19000",
+            "max_atmosphering_speed": "n/a",
+            "crew": "279,144",
+            "passengers": "38000",
+            "cargo_capacity": "250000000",
+            "consumables": "6 years",
+            "hyperdrive_rating": "2.0",
+            "MGLT": "40",
+            "starship_class": "Star dreadnought",
+            "pilots": [],
+            "films": [
+                "https://swapi.dev/api/films/2/",
+                "https://swapi.dev/api/films/3/"
+            ],
+            "created": "2014-12-15T12:31:42.547000Z",
+            "edited": "2014-12-20T21:23:49.893000Z",
+            "url": "https://swapi.dev/api/starships/15/",
+            "picturePath": "/assets/images/Solaris.png"
+        }
+    ]
+}

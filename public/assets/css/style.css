@@ -34,4 +34,5 @@
 .link {
     display: flex;
     align-items: flex-end;
+    padding: 20px;
 }
