@@ -1,17 +1,19 @@
-{% extends layout.html.twig %}
-{%  block content %}
-<div class="one-ship">
-    <img class="oneShipImage" src="/assets/images/{{ ship.image }}" alt="{{ ship.model }}">
+{% extends 'layout.html.twig' %}
+{% block content %}
+    <body class="ship-page">
+    <h2 class="shipTitle">{{ ship.model }}</h2>
+    <div class="all-for-one-ship">
     <section class="ship-characteristic">
-        <h2 class="shipTitle">{{ ship.model}}</h2>
-        <section class="added-to-cart">
-            <p class="price">{{ product.price }}€</p>
-        </section>
-        <p class="product-description">{{ product.description }}</p>
-        <form action="" method="get">
-            <a href="/product/add?id={{ product.id }}">
-                <button type="button" class="btn btn-success" name="rent" id="btn-rent">Rent</button></a>
-        </form>
+        <ul>
+            <li><p>Crew : {{ ship.crew }}</p></li>
+            <li><p>Passengers : {{ ship.passengers }}</p></li>
+            <li><p>Hyper Drive rating : {{ ship.hyperDriveRating }}</p></li>
+            <li><p>Capacity : {{ ship.cargoCapacity }}</p></li>
+            <li><p>Price : {{ ship.costInCredits }}</p></li>
+        </ul>
+        <button class="button" style="vertical-align:middle"><span>Rent</span></button>
     </section>
-</div>
+            <img class="oneShipImage" src="{{ ship.picturePath }}">
+    </div>
+    </body>
 {% endblock %}

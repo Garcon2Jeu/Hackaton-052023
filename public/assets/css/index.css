@@ -1,0 +1,48 @@
+.index-page{
+    background-image: url("../../assets/images/index-background.jpg");
+    color:white;
+}
+
+.index-title{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing : 5px
+}
+
+.describe-index{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    letter-spacing : 5px;
+    width:900px;
+}
+
+.date{
+    font-family: 'Orbitron', sans-serif;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+.text-index{
+    margin-top: 8%;
+    margin-left: 5%;
+    max-width: 50%;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo-link a i{
+    padding-left: 20px;
+    margin-left: 50px;
+}
+
+.logo{
+    height:100px;
+    width:80px;
+    padding-left: 20px;
+}
+
+.earth-logo{
+    margin-right: 50px;
+}

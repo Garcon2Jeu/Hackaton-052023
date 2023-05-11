@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <body class="planet-page">
+        <h2 class="planetTitle">{{ planet.name }}</h2>
+            <div class="all-for-one-planet">
+            <img class="onePlanetImage" src="{{ planet.picturePath }}">
+            <section class="planet-characteristic">
+                <ul>
+                    <li><p>Description : {{ planet.description }}</p></li>
+                    <br>
+                    <li><p>Distance From Earth : {{ planet.distanceFromEarth }}</p></li>
+                </ul>
+            </section>
+            </div>
+    </body>
+
+{% endblock %}

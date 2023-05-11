@@ -1,0 +1,14 @@
+@import "index.css";
+@import "allShips.css";
+@import "showPlanet.css";
+@import "ship.css";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/images/nightSkyPretty.jpg");
+    background-color: black;
+}
+
+
+
