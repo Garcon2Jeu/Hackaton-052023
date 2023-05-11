@@ -13,6 +13,6 @@ class ShowPlanetsController extends AbstractController
     }
     public function showAllPlanets()
     {
-        $planets = PlanetManager::AllPlanets();
+        //$planets = PlanetManager::AllPlanets();
     }
 }
