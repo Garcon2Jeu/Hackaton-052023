@@ -1,0 +1,27 @@
+.all-for-one-planet{
+    display: flex;
+    flex-direction: row;
+}
+
+.planet-characteristic{
+    width: 500px;
+    padding-top: 5%;
+    margin-left: 5%;
+    height: 300px;
+}
+
+.onePlanetImage{
+    margin-left: 4%;
+}
+
+.planetTitle{
+    margin-left: 850px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+li p{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    letter-spacing : 6px;
+    word-spacing: 8px;
+}
