@@ -1,0 +1,61 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+
+<div class="sr-ships-container">
+
+    <div class="sr-ships-box" id="sr-ship0">
+        <a href={{"ship?id=" ~ ships.0.id}}>
+            <h2>{{ships.0.model}}</h2>
+            <img src={{ships.0.picturePath}} alt="">
+        </a>
+        <div class=" sr-ships-connector">
+    </div>
+</div>
+
+<div class="sr-ships-box" id="sr-ship2">
+    <a href={{"ship?id=" ~ ships.2.id}}>
+        <h2>{{ships.2.model}}</h2>
+        <img src={{ships.2.picturePath}} alt="">
+    </a>
+    <div class=" sr-ships-connector">
+</div>
+</div>
+
+<div class="sr-ships-box" id="sr-ship4">
+    <a href={{"ship?id=" ~ ships.4.id}}>
+        <h2>{{ships.4.model}}</h2>
+        <img src={{ships.4.picturePath}} alt="">
+    </a>
+    <div class=" sr-ships-connector">
+</div>
+</div>
+
+<div class="sr-ships-separator"></div>
+
+<div class="sr-ships-box" id="sr-ship1">
+    <div class="sr-ships-connector"> </div>
+    <a href={{"ship?id=" ~ ships.1.id}}>
+        <img src={{ships.1.picturePath}} alt="">
+        <h2>{{ships.1.model}}</h2>
+    </a>
+</div>
+
+<div class=" sr-ships-box" id="sr-ship3">
+        <div class="sr-ships-connector"> </div>
+        <a href={{"ship?id=" ~ ships.3.id}}>
+        <img src={{ships.3.picturePath}} alt="">
+        <h2>{{ships.3.model}}</h2>
+    </a>
+</div>
+
+<div class=" sr-ships-box" id="sr-ship5">
+            <div class="sr-ships-connector"> </div>
+            <a href={{"ship?id=" ~ ships.5.id}}>
+            <img src={{ships.5.picturePath}} alt="">
+            <h2>{{ships.5.model}}</h2>
+        </a>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,78 @@
+.sr-ships-container {
+    display: grid;
+    grid:
+        "sr-ship0           .                  sr-ship2           .                  sr-ship4           ." 49.5% "sr-ships-separator sr-ships-separator sr-ships-separator sr-ships-separator sr-ships-separator sr-ships-separator" .5% ".                  sr-ship1           .                  sr-ship3           .                  sr-ship5" 49.5% / 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 80vh;
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.sr-ships-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 100%
+}
+
+.sr-ships-box>a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.sr-ships-box>a>h2 {
+    font-family: Orbitron;
+}
+
+.sr-ships-connector {
+    background-color: white;
+    height: 100%;
+    width: 2%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#sr-ship0 {
+    grid-area: sr-ship0;
+}
+
+#sr-ship2 {
+    grid-area: sr-ship2;
+}
+
+#sr-ship4 {
+    grid-area: sr-ship4;
+}
+
+.sr-ships-separator {
+    grid-area: sr-ships-separator;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    padding: 0;
+}
+
+#sr-ship1 {
+    grid-area: sr-ship1;
+}
+
+#sr-ship3 {
+    grid-area: sr-ship3;
+}
+
+#sr-ship5 {
+    grid-area: sr-ship5;
+}

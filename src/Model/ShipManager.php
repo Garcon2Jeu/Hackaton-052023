@@ -8,6 +8,7 @@ use App\Model\AbstractManager;
 class ShipManager extends AbstractManager
 {
     public const TABLE = 'ship';
+    public int $id;
     public string $model;
     public string $costInCredits;
     public int $hyperDriveRating;
@@ -18,6 +19,7 @@ class ShipManager extends AbstractManager
 
     public function __construct(array $shipData)
     {
+        $this->id = $shipData["id"];
         $this->model = $shipData["model"];
         $this->costInCredits = $shipData["cost_in_credits"];
         $this->hyperDriveRating = $shipData["hyperdrive_rating"];

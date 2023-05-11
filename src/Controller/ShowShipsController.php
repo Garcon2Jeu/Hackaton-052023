@@ -17,6 +17,7 @@ class ShowShipsController extends AbstractController
     {
         $ships = ShipManager::AllShips();
 
-        var_dump($ships);
+
+        return $this->twig->render("showAllShips.html.twig", ["ships" => $ships]);
     }
 }
