@@ -3,17 +3,23 @@
 namespace APP\Controller;
 
 use App\Controller\AbstractController;
-use App\Model\JsonDecoderManager;
+use App\Model\PopulateDBManager;
 
-class JsonDecoderController extends AbstractController
+class PopulateDBController extends AbstractController
 {
+    public function populateDB()
+    {
+        $this->addShips();
+        $this->addPlanets();
+        $this->assignShipToPlanet();
+    }
     public function addShips()
     {
-        $jsonDecoderManager = new JsonDecoderManager();
+        $jsonDecoderManager = new populateDBManager();
         //$jsonDecodermanager->test();
 
         $jsonData = file_get_contents("../ships.json");
-        $jsonDecoded = json_decode($jsonData);
+        $jsonDecoded = json_decode($jsonData, true);
 
         foreach ($jsonDecoded["results"] as $ship) {
             $jsonDecoderManager->insertShips($ship);
@@ -83,10 +89,30 @@ class JsonDecoderController extends AbstractController
             ]
         ];
 
-        $jsonDecoderManager = new JsonDecoderManager();
+        $jsonDecoderManager = new populateDBManager();
 
         foreach ($planets as $planet) {
             $jsonDecoderManager->insertPlanets($planet);
+        }
+    }
+
+    public function assignShipToPlanet()
+    {
+        $shipPlanet = [
+            1 => [2, 3],
+            2 => [1, 3],
+            3 => [1, 2],
+            4 => [1, 2],
+            5 => [1, 3],
+            6 => [2, 3],
+        ];
+
+        $jsonDecoderManager = new populateDBManager();
+
+        foreach ($shipPlanet as $shipID => $planets) {
+            foreach ($planets as $planetID) {
+                $jsonDecoderManager->insertShipPlanets($shipID, $planetID);
+            }
         }
     }
 }

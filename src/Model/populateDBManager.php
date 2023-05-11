@@ -5,7 +5,7 @@ namespace App\Model;
 use PDO;
 use App\Model\AbstractManager;
 
-class JsonDecoderManager extends AbstractManager
+class PopulateDBManager extends AbstractManager
 {
     public function insertShips(array $shipData)
     {
@@ -60,6 +60,25 @@ class JsonDecoderManager extends AbstractManager
         $statement->bindValue(":description", $planetData["description"], PDO::PARAM_STR);
         $statement->bindValue(":distance_from_earth", $planetData["distance_from_earth"], PDO::PARAM_INT);
         $statement->bindValue(":picturePath", $planetData["picturePath"], PDO::PARAM_STR);
+
+        $statement->execute();
+    }
+
+
+    public function insertShipPlanets(int $shipID, int $planetID)
+    {
+        $query = "INSERT INTO ship_planet (
+            ship_id, 
+            planet_id
+            ) VALUES ( 
+            :ship_id, 
+            :planet_id
+            )";
+
+        $statement = $this->pdo->prepare($query);
+
+        $statement->bindValue(":ship_id", $shipID, PDO::PARAM_STR);
+        $statement->bindValue(":planet_id", $planetID, PDO::PARAM_STR);
 
         $statement->execute();
     }
