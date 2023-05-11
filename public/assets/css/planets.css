@@ -1,14 +1,15 @@
 .SR_body_planets {
     background-image: url("../images/bg_planets2.jpg");
     background-size: cover;
+    text-decoration: none;
 }
 
-.SR_planets{
+.SR_planets {
     display: flex;
     justify-content: space-around;
 }
 
-.SR_planets_names{
+.SR_planets_names {
     padding-top: 1em;
     margin: 0;
     color: white;
@@ -16,24 +17,24 @@
     justify-content: center;
 }
 
-.SR_mercury_planets img{
+.SR_mercury_planets img {
     margin-top: 1em;
     height: 350px;
     width: 350px;
 }
 
-.SR_mars_planets img{
+.SR_mars_planets img {
     margin-top: 1em;
     height: 330px;
     width: 330px;
 }
 
-.SR_venus_planets img{
+.SR_venus_planets img {
     height: 370px;
     width: 370px;
 }
 
-.GSAP_test{
+.GSAP_test {
     background-color: aqua;
     border-radius: 50%;
     height: 50px;
