@@ -8,6 +8,7 @@ use App\Model\AbstractManager;
 class PlanetManager extends AbstractManager
 {
     public const TABLE = 'planet';
+    public int $id;
     public string $name;
     public string $description;
     public int $distanceFromEarth;
@@ -15,6 +16,7 @@ class PlanetManager extends AbstractManager
 
     public function __construct(array $planetData)
     {
+        $this->id = $planetData["id"];
         $this->name = $planetData["name"];
         $this->description = $planetData["description"];
         $this->distanceFromEarth = $planetData["distance_from_earth"];
