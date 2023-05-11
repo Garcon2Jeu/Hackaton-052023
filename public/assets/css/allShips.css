@@ -6,7 +6,9 @@
     width: 90%;
     margin-left: 5%;
     align-items: center;
+    background-image: url("/assets/images/nightSkyPretty.jpg");
 }
+
 
 .sr-ships-box {
     display: flex;
@@ -63,6 +65,9 @@ img {
     height: 100%;
     align-self: center;
     padding: 0;
+}
+.SR_planets_names {
+    font-family: 'Orbitron', sans-serif;
 }
 
 #sr-ship1 {
