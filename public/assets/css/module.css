@@ -2,6 +2,7 @@
 @import "allShips.css";
 @import "showPlanet.css";
 @import "ship.css";
+@import "planets.css";
 
 body {
     width: 100vw;
