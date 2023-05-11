@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<pre>
+    {{ dump(planet.picturePath) }}
+</pre>
+    <div class="image">
+        <div class="one-product">
+            <img class="onePlanetImage" src="{{ planet.picturePath }}">
+            <section class="product-characteristic">
+                <h2 class="bigTitle">{{ product.name_product }}</h2>
+                <section class="added-to-cart">
+                    <p class="price">{{ planet.name }}</p>
+                </section>
+                <p class="product-description">{{ planet.description }}</p>
+            </section>
+        </div>
+    </div>
+{% endblock %}

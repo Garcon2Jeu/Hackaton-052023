@@ -10,6 +10,8 @@ class ShowPlanetsController extends AbstractController
     {
         $planet = PlanetManager::withID($id);
 
+        return $this->twig->render('onePlanet/showOnePlanet.html.twig', ['planet' => $planet]);
+
         var_dump($planet);
     }
 
