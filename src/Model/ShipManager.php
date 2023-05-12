@@ -31,21 +31,6 @@ class ShipManager extends AbstractManager
         $this->passengers = $shipData["passengers"];
         $this->cargoCapacity = $shipData["cargo_capacity"];
         $this->picturePath = $shipData["picturePath"];
-        $this->planetsList = $this->getPlanetsID();
-    }
-
-    public function getPlanetsID()
-    {
-        $query = "SELECT planet_id FROM ship_planet WHERE ship_id = " . $this->id;
-
-        $statement = $this->pdo->query($query);
-        $planets = [];
-
-        foreach ($statement->fetchAll() as $index => $planet) {
-            $planets[] = PlanetManager::withID($planet["planet_id"]);
-        }
-
-        return $planets;
     }
 
     public static function withID($id)
