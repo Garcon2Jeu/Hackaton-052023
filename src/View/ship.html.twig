@@ -18,4 +18,88 @@
              </div>
         </div>
     </body>
+    {% if ship.id == 1 %}
+        <h2 class="shipForJourney">Planets available for this ship</h2>
+        <div class="SR-planet-on-ship-page">
+            <div class="SR-planets-suggest">
+            <h3 class="planet-name-ship-page">Venus</h3>
+                <a href="/planet?id=2"><img class="planets-picture-ship-page" src="/assets/images/venus.png" alt=""></a>
+            </div>
+            <div class="SR-planets-suggest">
+            <h3 class="planet-name-ship-page">Mercure</h3>
+                <a href="/planet?id=3"><img class="planets-picture-ship-page" src="/assets/images/mercure.png" alt=""></a>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if ship.id == 2 %}
+        <h2 class="shipForJourney">Planets available for this ship</h2>
+        <div class="SR-planet-on-ship-page">
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Mars</h3>
+                <a href="/planet?id=1"><img class="planets-picture-ship-page" src="/assets/images/mars.png" alt=""></a>
+            </div>
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Mercure</h3>
+                <a href="/planet?id=3"><img class="planets-picture-ship-page" src="/assets/images/mercure.png" alt=""></a>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if ship.id == 3 %}
+        <h2 class="shipForJourney">Planets available for this ship</h2>
+        <div class="SR-planet-on-ship-page">
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Mars</h3>
+                <a href="/planet?id=1"><img class="planets-picture-ship-page" src="/assets/images/mars.png" alt=""></a>
+            </div>
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Venus</h3>
+                <a href="/planet?id=2"><img class="planets-picture-ship-page" src="/assets/images/venus.png" alt=""></a>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if ship.id == 4 %}
+        <h2 class="shipForJourney">Planets available for this ship</h2>
+        <div class="SR-planet-on-ship-page">
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Mars</h3>
+                <a href="/planet?id=1"><img class="planets-picture-ship-page" src="/assets/images/mars.png" alt=""></a>
+            </div>
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Venus</h3>
+                <a href="/planet?id=2"><img class="planets-picture-ship-page" src="/assets/images/venus.png" alt=""></a>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if ship.id == 5 %}
+        <h2 class="shipForJourney">Planets available for this ship/h2>
+        <div class="SR-planet-on-ship-page">
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Mars</h3>
+                <a href="/planet?id=1"><img class="planets-picture-ship-page" src="/assets/images/mars.png" alt=""></a>
+            </div>
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Mercure</h3>
+                <a href="/planet?id=2"><img class="planets-picture-ship-page" src="/assets/images/mercure.png" alt=""></a>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if ship.id == 6 %}
+        <h2 class="shipForJourney">Planets available for this ship</h2>
+        <div class="SR-planet-on-ship-page">
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Venus</h3>
+                <a href="/planet?id=2"><img class="planets-picture-ship-page" src="/assets/images/venus.png" alt=""></a>
+            </div>
+            <div class="SR-planets-suggest">
+                <h3 class="planet-name-ship-page">Mercure</h3>
+                <a href="/planet?id=3"><img class="planets-picture-ship-page" src="/assets/images/mercure.png" alt=""></a>
+            </div>
+        </div>
+    {% endif %}
+
 {% endblock %}
