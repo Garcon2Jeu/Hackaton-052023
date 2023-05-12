@@ -39,3 +39,35 @@ body{
     height: 50px;
     width: 50px;
 }
+
+.first-part-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.name-header{
+    letter-spacing : 5px;
+    font-size: large;
+    color:white;
+    margin: 30px 0 0 10px;
+}
+.logo-link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo-link a i{
+    padding-left: 20px;
+    margin-left: 50px;
+}
+
+.logo-header{
+    height:100px;
+    width:80px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.earth-logo{
+    margin-right: 50px;
+}

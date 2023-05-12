@@ -2,12 +2,13 @@
 @import "allShips.css";
 @import "showPlanet.css";
 @import "ship.css";
-@import "planets.css";
 
 body {
     width: 100vw;
     height: 100vh;
     background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
 }
 
 
