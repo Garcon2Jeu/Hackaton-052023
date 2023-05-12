@@ -1,7 +1,6 @@
 {% extends 'layout.html.twig' %}
+
 {% block content %}
-
-
 
 <body class="ship-page">
     <h2 class="shipTitle">{{ ship.model }}</h2>
@@ -28,5 +27,15 @@
         </section>
         <img class="oneShipImage" src="{{ ship.picturePath }}">
     </div>
+
+
+    {% for planet in ship.planetsList %}
+    <a href={{"/planet?id=" ~ planet.id}}>
+        <h2>{{planet.name}}</h2>
+        <img src={{planet.picturePath}} alt="">
+    </a>
+    {% endfor %}
+
+
 </body>
 {% endblock %}
