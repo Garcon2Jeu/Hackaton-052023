@@ -1,19 +1,97 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+    {% if planet.id == 1 %}
+        <body class="planet-page">
+            <h2 class="planetTitle">{{ planet.name }}</h2>
+                <div class="all-for-one-planet">
+                    <img class="onePlanetImage" src="{{ planet.picturePath }}">
+                    <section class="planet-characteristic">
+                        <ul>
+                            <li><p>Description : {{ planet.description }}</p></li>
+                            <br>
+                            <li><p>Distance From Earth : {{ planet.distanceFromEarth }}</p></li>
+                        </ul>
+                    </section>
+                </div>
+                <h2 class="shipForJourney">Ships available for this journey .</h2>
+                <div class="SR_shipList">
+                    <div>
+                        <img src={{ ships.2.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.3.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.4.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.5.picturePath }} alt="">
+                    </div>
+                </div>
+        </body>
+    {% endif %}
 
-    <body class="planet-page">
-        <h2 class="planetTitle">{{ planet.name }}</h2>
-            <div class="all-for-one-planet">
-            <img class="onePlanetImage" src="{{ planet.picturePath }}">
-            <section class="planet-characteristic">
-                <ul>
-                    <li><p>Description : {{ planet.description }}</p></li>
-                    <br>
-                    <li><p>Distance From Earth : {{ planet.distanceFromEarth }}</p></li>
-                </ul>
-            </section>
-            </div>
-    </body>
+    {% if planet.id == 2 %}
+        <body class="planet-page">
+            <h2 class="planetTitle">{{ planet.name }}</h2>
+                <div class="all-for-one-planet">
+                    <img class="onePlanetImage" src="{{ planet.picturePath }}">
+                    <section class="planet-characteristic">
+                        <ul>
+                            <li><p class="desc-venus">Description : {{ planet.description }}</p></li>
+                            <br>
+                            <li><p>Distance From Earth : {{ planet.distanceFromEarth }}</p></li>
+                        </ul>
+                    </section>
+                </div>
+                <h2 class="shipForJourney">Ships available for this journey .</h2>
+                <div class="SR_shipList_2">
+                    <div>
+                        <img src={{ ships.1.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.3.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.4.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.6.picturePath }} alt="">
+                    </div>
+                </div>
+        </body>
+    {% endif %}
+
+    {% if planet.id == 3 %}
+        <body class="planet-page">
+            <h2 class="planetTitle">{{ planet.name }}</h2>
+                <div class="all-for-one-planet">
+                    <img class="onePlanetImage" src="{{ planet.picturePath }}">
+                    <section class="planet-characteristic">
+                        <ul>
+                            <li><p>Description : {{ planet.description }}</p></li>
+                            <br>
+                            <li><p>Distance From Earth : {{ planet.distanceFromEarth }}</p></li>
+                        </ul>
+                    </section>
+                </div>
+                <h2 class="shipForJourney">Ships available for this journey .</h2>
+                <div class="SR_shipList">
+                    <div>
+                        <img src={{ ships.1.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.2.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.5.picturePath }} alt="">
+                    </div>
+                    <div>
+                        <img src={{ ships.6.picturePath }} alt="">
+                    </div>
+                </div>
+        </body>
+    {% endif %}
 
 {% endblock %}
