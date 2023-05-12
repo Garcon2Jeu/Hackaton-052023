@@ -72,7 +72,7 @@ class PopulateDBController extends AbstractController
                 "picturePath" => "/assets/images/venus.png"
             ],
 
-            "mercure" => [
+            "mercury" => [
                 "name" => "mercure",
                 "description" => "Mercury is the first planet 
                 from the Sun and the smallest planet in the Solar System. 

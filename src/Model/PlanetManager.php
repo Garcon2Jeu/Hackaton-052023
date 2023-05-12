@@ -13,9 +13,12 @@ class PlanetManager extends AbstractManager
     public string $description;
     public int $distanceFromEarth;
     public string $picturePath;
+    public array $shipsList;
 
     public function __construct(array $planetData)
     {
+        parent::__construct();
+
         $this->id = $planetData["id"];
         $this->name = $planetData["name"];
         $this->description = $planetData["description"];

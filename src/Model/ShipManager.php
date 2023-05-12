@@ -4,6 +4,7 @@ namespace App\Model;
 
 use PDO;
 use App\Model\AbstractManager;
+use App\Model\PlanetManager;
 
 class ShipManager extends AbstractManager
 {
@@ -16,9 +17,12 @@ class ShipManager extends AbstractManager
     public string $passengers;
     public string $cargoCapacity;
     public string $picturePath;
+    public array $planetsList;
 
     public function __construct(array $shipData)
     {
+        parent::__construct();
+
         $this->id = $shipData["id"];
         $this->model = $shipData["model"];
         $this->costInCredits = $shipData["cost_in_credits"];

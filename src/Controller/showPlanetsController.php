@@ -18,7 +18,7 @@ class ShowPlanetsController extends AbstractController
     }
     public function showAllPlanets()
     {
-        //$planets = PlanetManager::AllPlanets();
-        return $this->twig->render('planets.html.twig');
+        $planets = PlanetManager::AllPlanets();
+        return $this->twig->render('planets.html.twig', ['planets' => $planets]);
     }
 }
