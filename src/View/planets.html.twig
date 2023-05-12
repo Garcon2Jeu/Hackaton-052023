@@ -4,8 +4,15 @@
 {% endblock %}
 {% block content %}
     <link rel="stylesheet" href="/assets/css/planets.css">
-    <script src="/JS/GSAP.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+    {# <script src="/JS/GSAP.js" defer></script>
+    <script>
+        gsap.to(".GSAP_test",{
+            y: -300,
+            x: -300,
+            duration: 2,
+        })
+    </script>#}
 <div class="SR_planets">
     <div class="SR_mercury_planets">
         <h3 class="SR_planets_names">MERCURY</h3>
@@ -23,9 +30,7 @@
     </div>
 </div>
     <div class="GSAP_test">
-        
+
     </div>
-</body>
-</html>
 
 {% endblock %}
