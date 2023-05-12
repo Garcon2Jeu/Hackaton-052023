@@ -1,6 +1,6 @@
 {% extends 'layout.html.twig' %}
 {% block content %}
-    <body class="ship-page">
+    <div class="ship-page">
         <div class="main-ship">
             <section class="ship-characteristic">
                 <ul>
@@ -17,7 +17,7 @@
                 <img class="oneShipImage" src="{{ ship.picturePath }}">
              </div>
         </div>
-    </body>
+    </div>
     {% if ship.id == 1 %}
         <h2 class="shipForJourney">Planets available for this ship</h2>
         <div class="SR-planet-on-ship-page">

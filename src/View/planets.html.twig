@@ -1,22 +1,27 @@
 {% extends 'innerLayout.html.twig' %}
 {% block title %}
-    Planets
+Planets
 {% endblock %}
 {% block content %}
 <div class="SR_planets">
-    <div class="SR_mercury_planets">
-        <h3 class="SR_planets_names">MERCURY</h3>
-        <img src="/assets/images/mercure.png" alt="image of mercury">
-    </div>
-
-    <div class="SR_mars_planets">
+    <a href={{"planet?id=" ~ planets.0.id}} class="SR_mars_planets">
         <h3 class="SR_planets_names">MARS</h3>
         <img src="/assets/images/mars.png" alt="image of mars">
-    </div>
+    </a>
 
-    <div class="SR_venus_planets">
+    <a href={{"planet?id=" ~ planets.1.id}} class="SR_venus_planets">
         <h3 class="SR_planets_names">VENUS</h3>
         <img src="/assets/images/venus.png" alt="image venus">
     </div>
 </div>
 {% endblock %}
+
+    </a>
+
+    <a href={{"planet?id=" ~ planets.2.id}} class=" SR_mercury_planets">
+        <h3 class="SR_planets_names">MERCURY</h3>
+        <img src="/assets/images/mercure.png" alt="image of mercury">
+    </a>
+</div>
+{% endblock %}
+
