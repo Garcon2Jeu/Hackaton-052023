@@ -9,14 +9,11 @@ class ShowShipsController extends AbstractController
     public function showShip($id)
     {
         $ship = ShipManager::withID($id);
-
-        var_dump($ship);
+        return $this->twig->render("ship.html.twig", ['ship' => $ship]);
     }
-
     public function showAllShips()
     {
         $ships = ShipManager::AllShips();
-
-        var_dump($ships);
+        return $this->twig->render("showAllShips.html.twig", ["ships" => $ships]);
     }
 }

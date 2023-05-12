@@ -5,7 +5,7 @@
 
 .index-title{
     font-family: 'Orbitron', sans-serif;
-    letter-spacing : 10px
+    letter-spacing : 5px
 }
 
 .describe-index{
@@ -27,10 +27,6 @@
     max-width: 50%;
 }
 
-.ship-page{
-    background-image: url('../../assets/images/vaisseau-background.jpg');
-}
-
 .logo-link {
     display: flex;
     justify-content: flex-end;
@@ -45,6 +41,7 @@
     height:100px;
     width:80px;
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 .earth-logo{

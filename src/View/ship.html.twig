@@ -1,0 +1,41 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<body class="ship-page">
+    <h2 class="shipTitle">{{ ship.model }}</h2>
+    <div class="all-for-one-ship">
+        <section class="ship-characteristic">
+            <ul>
+                <li>
+                    <p>Crew : {{ ship.crew }}</p>
+                </li>
+                <li>
+                    <p>Passengers : {{ ship.passengers }}</p>
+                </li>
+                <li>
+                    <p>Hyper Drive rating : {{ ship.hyperDriveRating }}</p>
+                </li>
+                <li>
+                    <p>Capacity : {{ ship.cargoCapacity }}</p>
+                </li>
+                <li>
+                    <p>Price : {{ ship.costInCredits }}</p>
+                </li>
+            </ul>
+            <button class="button" style="vertical-align:middle"><span>Rent</span></button>
+        </section>
+        <img class="oneShipImage" src="{{ ship.picturePath }}">
+    </div>
+
+
+    {% for planet in ship.planetsList %}
+    <a href={{"/planet?id=" ~ planet.id}}>
+        <h2>{{planet.name}}</h2>
+        <img src={{planet.picturePath}} alt="">
+    </a>
+    {% endfor %}
+
+
+</body>
+{% endblock %}
